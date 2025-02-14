@@ -22,7 +22,7 @@ def load_model():
         model = joblib.load(file)
     return model
 
-def prediction(input_data):
+def prediction(input_data, model):
     pred = model.predict(input_data)[0]
     return f'Predicted Total Price: {pred:.2f}'
 
@@ -50,7 +50,7 @@ def main():
         return  # Stop execution if values are not numeric
 
     if st.button('Predict'):
-        response = prediction(inp_list)
+        response = prediction(inp_list, model)
         st.success(response)
 
 if __name__ == '__main__':
