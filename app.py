@@ -18,7 +18,7 @@ def download_model():
         st.info('Model already exists locally.')
 
 def load_model():
-    with open('rff_final_model.pkl', 'rb') as file:
+    with open('rf_final_model.pkl', 'rb') as file:
         model = joblib.load(file)
     return model
 
