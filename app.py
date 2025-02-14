@@ -5,8 +5,8 @@ import requests
 import os
 
 def download_model():
-    url = 'https://github.com/your-username/your-repository/releases/download/v1.0/rff_final_model.pkl'  # Replace with your actual URL
-    local_filename = 'rff_final_model.pkl'
+    url = 'https://github.com/yasharthrana/Dynamic-Pricing-/releases/download/v1.0/rf_final_model.pkl'  # Replace with your actual URL
+    local_filename = 'rf_final_model.pkl'
     
     if not os.path.exists(local_filename):
         with st.spinner('Downloading model...'):
