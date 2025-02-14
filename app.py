@@ -2,10 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import joblib
 
 # Load the trained model and scaler
 with open('rff_final_model.pkl', 'rb') as file:
-    model = pickle.load(file)
+    model = joblib.load(file)
 
 
 
